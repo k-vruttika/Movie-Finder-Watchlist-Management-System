@@ -2,7 +2,6 @@
 
 A complete web application inspired by Letterboxd and IMDb, built with PHP, MySQL, HTML5, and CSS3 for a Web Application Development course.
 
-![Movie Viewer](assets/images/placeholder.jpg)
 
 ## 🎬 Features
 
