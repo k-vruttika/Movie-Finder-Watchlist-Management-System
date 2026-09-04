@@ -1,0 +1,172 @@
+/**
+ * Admin-specific Stylesheet
+ * Additional styles for admin dashboard and management pages
+ */
+
+/* Admin Header */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+    font-size: 2.5rem;
+}
+
+.admin-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Admin Grid */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admin-section {
+    background-color: var(--background-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.admin-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.admin-section .section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Admin Tables */
+.admin-table-container {
+    overflow-x: auto;
+    background-color: var(--background-card);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table thead {
+    background-color: var(--background-dark);
+}
+
+.admin-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.admin-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table tbody tr:hover {
+    background-color: var(--background-hover);
+}
+
+.table-poster {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Admin Forms */
+.admin-form-container {
+    background-color: var(--background-card);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.admin-form {
+    margin-top: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.movie-stats {
+    background-color: var(--background-dark);
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.movie-stats p {
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+/* Admin Stats */
+.admin-stats {
+    background-color: var(--background-card);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.admin-stats p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+/* Responsive Admin */
+@media (max-width: 768px) {
+    .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-table {
+        font-size: 0.9rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
